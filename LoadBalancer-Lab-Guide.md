@@ -48,6 +48,8 @@ web3.vm.provision "shell", path: "provision/webserver.sh"
 end
 end
 
+![image](<Screenshot (191)-1.png>)
+
 ### Step 3: Create Provisioning Scripts
 
 Create a directory named `provision` in your project directory.
@@ -80,6 +82,9 @@ fi
 Ensure both scripts are executable:
 chmod +x provision/nginx.sh
 chmod +x provision/webserver.sh
+
+![image](<Screenshot (192)-1.png>)
+![image](<Screenshot (193)-1.png>)
 
 ### Step 4: Initialize and Start Vagrant Machines
 
@@ -117,9 +122,13 @@ Replace web1, web2, web3 with their correct private IPs.
 Restart Nginx to apply the changes:
 sudo systemctl restart nginx
 
+![image](<Screenshot (197)-1.png>)
+
 ### Step 6: Test the Load Balancer
 
 On your local machine, open a web browser and navigate to the private IP address of the Nginx VM. You should see the load-balanced content from the web servers.
+
+![image](<Screenshot (202)-1.png>)
 
 ### Step 7: Verify Load Balancing
 
@@ -135,8 +144,14 @@ tail -f /var/log/nginx/access.log
 
 You should see requests being distributed among the web servers.
 
+![alt text](<Screenshot (204)-1.png>)
+
 ### Step 8: Check Load Balancing in a Web Browser
 
 Open a web browser and enter the private IP address of the Nginx VM. Refresh the page multiple times to observe the round-robin load balancing in action.
+
+![image](<Screenshot (202)-1.png>)
+
+![image](<Screenshot (203)-1.png>)
 
 This setup should give you a functional load balancing environment using Nginx and Vagrant.
