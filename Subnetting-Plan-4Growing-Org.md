@@ -1,6 +1,6 @@
 To create a subnetting plan based on the provided requirements, we’ll focus on allocating IP addresses efficiently for each department while accounting for future growth. The existing plan allocates specific IP ranges and subnet masks to each department.
 
-Certainly! We can use a Class C network for the subnetting plan. A Class C network typically has an IP range of 192.168.x.x, with a default subnet mask of 255.255.255.0, allowing for 256 IP addresses (254 usable).
+Using a Class C network for the subnetting plan. A Class C network typically has an IP range of 192.168.x.x, with a default subnet mask of 255.255.255.0, allowing for 256 IP addresses (254 usable).
 
 ### 1. **Initial Subnet Allocation (Class C Network)**
 
